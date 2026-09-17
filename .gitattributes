@@ -1,0 +1,11 @@
+# Normalize line endings to LF in the repository, regardless of OS
+* text=auto eol=lf
+
+# Shell scripts must always have LF, otherwise they fail in Cloud Shell / Linux
+*.sh text eol=lf
+
+# Binary files
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary
