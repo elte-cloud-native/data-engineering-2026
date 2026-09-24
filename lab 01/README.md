@@ -24,6 +24,9 @@ You'll need to create a new `Resource Group` for the VM.
 Select a region that is supported by your Student Account, and it is close to us.
 
 For the VM size, choose `Standard_B2ats_v2` (x86, included in the free tier).
+**The portal pre-selects `Standard_D2s_v3` by default, which is not available for student subscriptions** (you'll see a `This size is currently unavailable in <region> for this subscription: NotAvailableForSubscription` error).
+Click `See all sizes` below the `Size` field, search for `B2ats_v2` and select it.
+If `Standard_B2ats_v2` is also unavailable in your region, switch to another one of your allowed regions.
 The older `Standard_B1s` size is being retired and is usually not available for new subscriptions.
 Avoid `B2pts v2`, it is an ARM-based machine and needs an ARM image.
 
