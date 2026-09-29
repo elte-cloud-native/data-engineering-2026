@@ -1,0 +1,6 @@
+event_id,sensor_id,event_timestamp,temperature_c,schema_version
+evt-001,S1,2025-09-02T10:00:00Z,21.5,1
+evt-002,S2,2025-09-02T10:01:00Z,22.1,1
+evt-003,S1,2025-09-02T10:02:00Z,21.7,1
+evt-004,S3,2025-09-02T10:03:00Z,19.8,1
+evt-005,S2,2025-09-02T10:04:00Z,22.4,1

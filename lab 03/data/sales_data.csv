@@ -1,0 +1,6 @@
+order_id,customer_id,amount,currency
+1001,C001,250,EUR
+1002,C002,175,EUR
+1003,C003,300,USD
+1004,C004,220,EUR
+1005,C005,150,GBP

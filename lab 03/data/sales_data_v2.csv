@@ -1,0 +1,3 @@
+order_id,customer_id,amount,currency,region
+1006,C006,180,EUR,HU
+1007,C007,210,USD,US

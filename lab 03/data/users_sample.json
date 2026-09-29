@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Ada Example",
+    "email": "ada@example.org",
+    "address": {"city": "Budapest"}
+  },
+  {
+    "id": 2,
+    "name": "Bela Example",
+    "email": "bela@example.org",
+    "address": {"city": "Szeged"}
+  }
+]
