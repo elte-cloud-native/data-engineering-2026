@@ -1,18 +1,33 @@
 # Lab 03 — Data ingestion
 
-This lab follows two simple examples: a CSV export from a sales system and a
-JSON response from a public API. We place both in a local landing area, then
-copy them to an Azure Blob Storage `bronze` container. Finally, we look at a
-changed CSV schema and a wrongly named folder.
+## Overview
 
-The focus is **what arrives, where it lands, and how we can recognize it later**.
-The Python files in `starter/` are prepared convenience helpers, **not Python
-programming exercises**. You only need to run them. You do not need to build
-an API, implement pagination, or understand the Azure SDK internals.
+In this lab, you will examine data ingestion and how it connects to the stages
+that come before it. **Data collection** creates or captures data in a source
+system, **data transportation** moves it towards the data platform, and
+**data ingestion** accepts and lands it in platform-managed storage. We use
+two common inputs: a CSV file exported by a sales system and a JSON response
+received from an API. In practice, transportation and ingestion may be closely
+coupled, as the examples in this lab demonstrate.
 
-The lab has four parts (roughly 15 + 30 + 20 + 15 minutes, including
-discussion). Parts 1, 3 and 4 work locally without an Azure account. If Azure
-access is unavailable, use the dry-run in Part 2.
+A production ingestion pipeline may automate these steps with connectors,
+orchestration, validation and monitoring tools. This lab deliberately keeps
+the workflow low-level and explicit so that the movement of the data and the
+responsibility of each stage remain easy to see.
+
+You will:
+
+- inspect the two source formats;
+- place unchanged copies in a structured local landing folder;
+- preview and optionally upload them to an Azure Blob Storage `bronze`
+  container, which represents storage for newly arrived data;
+- observe what happens when a new column appears in a source file;
+- detect a file placed under an incorrectly structured folder path.
+
+The purpose is to recognize the responsibility of each stage and understand
+how data is received, stored and identified before any business transformation
+or analysis begins. The Python files in `starter/` are prepared helpers: you
+only need to run them, not understand or modify their implementation.
 
 ## Before you begin
 
