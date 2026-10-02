@@ -221,3 +221,24 @@ find, mix different inputs, or give a misleading lineage. The rows may be
 valid while the landing metadata is not.
 
 </details>
+
+# Clean up
+
+When you are finished, remove the local landing files and deactivate the virtual
+environment:
+
+```bash
+rm -rf landing
+deactivate
+```
+
+Remove the Azure connection information from the current shell:
+
+```bash
+unset AZURE_STORAGE_CONNECTION_STRING
+unset AZURE_STORAGE_CONTAINER
+```
+
+If you created the Storage account only for this lab and do not need it for
+later exercises, delete it from the Azure Portal to avoid leaving unnecessary
+resources running.
