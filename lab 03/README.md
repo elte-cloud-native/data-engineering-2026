@@ -142,10 +142,6 @@ existing object. **It checks the path, not whether the bytes are identical.**
 That simple, safe policy is enough for this exercise; real ingestion systems
 need a more explicit policy for changed data at the same path. When finished:
 
-```bash
-unset AZURE_STORAGE_CONNECTION_STRING
-```
-
 Questions: Which part of the path comes from the source file name, and which
 part did we choose for the landing convention? Is copying data to Bronze a
 transformation of its business meaning? What would happen if the same name
