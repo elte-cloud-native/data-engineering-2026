@@ -1,0 +1,4 @@
+S1|{"event_id":"evt-001","sensor_id":"S1","event_timestamp":"2025-09-02T10:00:00Z","temperature_c":21.5}
+S2|{"event_id":"evt-002","sensor_id":"S2","event_timestamp":"2025-09-02T10:00:01Z","temperature_c":23.0}
+S1|{"event_id":"evt-003","sensor_id":"S1","event_timestamp":"2025-09-02T10:00:02Z","temperature_c":21.8}
+S2|{"event_id":"evt-004","sensor_id":"S2","event_timestamp":"2025-09-02T10:00:03Z","temperature_c":23.2}
