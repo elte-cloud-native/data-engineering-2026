@@ -88,18 +88,23 @@ in BIOS/UEFI; check it only if WSL or Docker reports a virtualization error.
 
 ### Linux
 
-Follow the official
-[Docker Engine installation guide](https://docs.docker.com/engine/install/)
-for your distribution. For example, use the dedicated
-[Ubuntu instructions](https://docs.docker.com/engine/install/ubuntu/) rather
-than commands written for a different distribution.
-
-After installation, start Docker and verify it:
+On Ubuntu, the simplest setup for this lab is the Docker package maintained in
+the Ubuntu repository:
 
 ```bash
+sudo apt update
+sudo apt install -y docker.io
 sudo systemctl enable --now docker
 sudo docker run --rm hello-world
 ```
+
+This package supports all Docker operations used in the lab. It may be older
+than the packages published directly by Docker, which is not a problem for
+this exercise. If you need the latest Docker Engine or use another Linux
+distribution, follow the official
+[Docker Engine installation guide](https://docs.docker.com/engine/install/)
+and select the instructions for your distribution. Do not mix packages from
+the Ubuntu and Docker repositories.
 
 The commands in this lab omit `sudo`. You may either prefix Docker commands
 with `sudo`, or follow Docker's
